@@ -6,24 +6,27 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
-        <title>Canvas</title>
+        <title>Есть рубли?</title>
         <script async src="./src/index.js"></script>
         <link href="./src/index.css" rel="stylesheet" />
-        <link href="./src/images/favicon.ico">
+        <link href="./src/images/favicon.ico" rel="shortcut icon" />
     </head>
+
     <body>
-        <canvas class="canvas"></canvas>
-        <img
-            class="image"
-            style="display: none"
-            src="./src/est.jpg"
-            crossorigin="anonymous"
-        />
-        <br />
-        <span>Введите необходимое количество рублей</span>
-        <input class="input" type="number" />
-        <br />
-        <span>Запросить рубли</span>
-        <button class="download-button">Download</button>
+        <main class="main">
+            <canvas class="canvas"></canvas>
+            <img
+                class="image"
+                style="display: none"
+                src="./src/images/est.jpg"
+                crossorigin="anonymous"
+            />
+            <br />
+            <span>Введите необходимое количество рублей</span>
+            <input class="input" type="number" />
+            <br />
+            <span>Запросить рубли</span>
+            <button class="download-button">Download</button>
+        </main>
     </body>
 </html>
