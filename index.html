@@ -13,20 +13,25 @@
     </head>
 
     <body>
+        <header class="header">
+            <h1 class="header__title">Клянчим деньги</h1>
+        </header>
         <main class="main">
-            <canvas class="canvas"></canvas>
+            <canvas class="canvas">Что-то случилось с изображением :(</canvas>
             <img
                 class="image"
                 style="display: none"
                 src="./src/images/est.jpg"
                 crossorigin="anonymous"
             />
-            <br />
-            <span>Введите необходимое количество рублей</span>
-            <input class="input" type="number" />
-            <br />
-            <span>Запросить рубли</span>
-            <button class="download-button">Download</button>
+            <div class="main-container">
+                <p class="main__text">Введите необходимое количество рублей</p>
+                <input class="input" type="number" />
+                <p class="main__text">Запросить рубли</p>
+                <button class="download-button">
+                    <div class="download-button-icon"></div>
+                </button>
+            </div>
         </main>
     </body>
 </html>
