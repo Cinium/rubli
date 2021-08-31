@@ -17,7 +17,9 @@
             <h1 class="header__title">Клянчим деньги</h1>
         </header>
         <main class="main">
-            <canvas class="canvas">Что-то случилось с изображением :(</canvas>
+            <canvas class="canvas"
+                >Что-то случилось с изображением :(</canvas
+            >
             <img
                 class="image"
                 style="display: none"
@@ -25,12 +27,20 @@
                 crossorigin="anonymous"
             />
             <div class="main-container">
-                <p class="main__text">Введите необходимое количество рублей</p>
+                <p class="main__text">
+                    Введите необходимое количество рублей
+                </p>
                 <input class="input" type="number" />
                 <p class="main__text">Запросить рубли</p>
                 <button class="download-button">
                     <div class="download-button-icon"></div>
                 </button>
+                <br>
+                <button class="download-button share">
+                    Поделиться
+                    <i class="fa fa-share-square"></i>
+                </button>
+                <div class="result"></div>
             </div>
         </main>
     </body>

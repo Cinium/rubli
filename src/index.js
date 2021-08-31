@@ -74,3 +74,24 @@ downloadButton.addEventListener('click', handleDownload);
 
 // рендер при загузке страницы
 window.onload = () => draw();
+
+const btn = document.querySelector('.share')
+
+  btn.addEventListener('click', async () => {
+        const dataUrl = canvas.toDataURL();
+        const blob = await (await fetch(dataUrl)).blob();
+        const filesArray = [
+          new File(
+            [blob],
+            'rubli.png',
+            {
+              type: blob.type,
+              lastModified: new Date().getTime()
+            }
+          )
+        ];
+        const shareData = {
+          files: filesArray,
+        };
+        navigator.share(shareData);
+  });
