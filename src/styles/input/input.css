@@ -1,11 +1,14 @@
 .input {
     margin-bottom: 15px;
+    outline: none;
+    font-size: large;
 }
 
 @media screen and (max-width: 424px) {
     .input {
         border-radius: 8px;
-        padding: 10px;
+        padding: 5px;
         margin-bottom: 10px;
+
     }
 }

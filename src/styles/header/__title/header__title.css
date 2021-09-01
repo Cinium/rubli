@@ -5,6 +5,7 @@
 
 @media screen and (max-width: 424px) {
     .header__title {
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 700;
     }
 }
