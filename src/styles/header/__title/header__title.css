@@ -1,0 +1,10 @@
+.header__title {
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+}
+
+@media screen and (max-width: 424px) {
+    .header__title {
+        font-size: 25px;
+    }
+}

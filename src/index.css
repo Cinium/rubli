@@ -1,128 +1,15 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: snow;
-}
+@import url('./styles/body/body.css');
 
-.header {
-    margin-bottom: 40px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
-    background-color: white;
-    padding: 30px 250px 3px;
-}
+@import url('./styles/header/header.css');
+@import url('./styles/header/__title/header__title.css');
 
-.header__title {
-    margin: 0 0 20px;
-    color: rgba(0, 0, 0, 0.85);
-}
+@import url('./styles/main/main.css');
+@import url('./styles/main/__container/main__container.css');
+@import url('./styles/main/__buttons/__icons/main__buttons__icons.css');
 
-.main {
-    padding: 0 250px;
-    margin: 0 auto;
-}
+@import url('./styles/canvas/canvas.css');
 
-.main__text {
-    font-size: large;
-}
+@import url('./styles/button/button.css');
+@import url('./styles/button/__icon/button__icon.css');
 
-.main-container {
-}
-
-.canvas {
-    display: block;
-    margin: 0 auto;
-    border-radius: 30px;
-    max-width: 50%;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
-}
-
-.download-button {
-    border-radius: 10px;
-    padding: 16px;
-    border-color: transparent;
-    display: inline-flex;
-    align-items: center;
-    transition: 0.2s;
-    font-weight: bold;
-    font-size: medium;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.download-button:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-.download-button-icon {
-    background-image: url('./images/file_download_black_36dp.svg');
-    min-height: 36px;
-    min-width: 36px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-@media screen and (max-width: 1024px) {
-    .canvas {
-        border-radius: 20px;
-        max-width: 90%;
-    }
-
-    .header {
-        margin-bottom: 30px;
-        padding: 20px 150px 3px;
-    }
-
-    .main {
-        padding: 0 150px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .header {
-        margin-bottom: 30px;
-        padding: 20px 100px 3px;
-    }
-
-    .main {
-        padding: 0 100px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 424px) {
-    .header {
-        margin-bottom: 30px;
-        padding: 20px 50px 3px;
-    }
-
-    .main {
-        padding: 0 50px;
-        margin: 0 auto;
-    }
-
-    .canvas {
-        margin-bottom: 30px;
-        max-width: 100%;
-    }
-
-    .header__title {
-        margin: 0 0 20px;
-        font-size: 25px;
-    }
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .input {
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 30px;
-    }
-
-    .download-button {
-        justify-content: center;
-    }
-}
+@import url('./styles/input/input.css');

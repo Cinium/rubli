@@ -1,0 +1,25 @@
+.header {
+    margin-bottom: 40px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding: 20px 30vw 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        margin-bottom: 30px;
+        padding: 20px 30vw 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 20px 20vw 20px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .header {
+        padding: 20px 50px 20px;
+    }
+}

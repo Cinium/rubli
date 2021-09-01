@@ -1,0 +1,21 @@
+.canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    max-width: 100%;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+    .canvas {
+        border-radius: 20px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .canvas {
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}

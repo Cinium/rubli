@@ -1,4 +1,7 @@
-const downloadButton = document.querySelector('.download-button');
+const downloadButton = document.querySelector(
+    '.main__download-button'
+);
+const shareButton = document.querySelector('.main__share-button');
 const input = document.querySelector('.input');
 const image = document.querySelector('.image');
 const canvas = document.querySelector('.canvas');
@@ -75,23 +78,19 @@ downloadButton.addEventListener('click', handleDownload);
 // рендер при загузке страницы
 window.onload = () => draw();
 
-const btn = document.querySelector('.share')
+shareButton.addEventListener('click', handleShare);
 
-  btn.addEventListener('click', async () => {
-        const dataUrl = canvas.toDataURL();
-        const blob = await (await fetch(dataUrl)).blob();
-        const filesArray = [
-          new File(
-            [blob],
-            'rubli.png',
-            {
-              type: blob.type,
-              lastModified: new Date().getTime()
-            }
-          )
-        ];
-        const shareData = {
-          files: filesArray,
-        };
-        navigator.share(shareData);
-  });
+async function handleShare() {
+    const dataUrl = canvas.toDataURL();
+    const blob = await (await fetch(dataUrl)).blob();
+    const filesArray = [
+        new File([blob], 'rubli.png', {
+            type: blob.type,
+            lastModified: new Date().getTime(),
+        }),
+    ];
+    const shareData = {
+        files: filesArray,
+    };
+    navigator.share(shareData);
+}
