@@ -15,12 +15,13 @@
         color: rgb(226, 226, 226);
     }
 
-    .canvasdark-scheme {
+    .canvas.dark-scheme {
         box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
     }
 
     .input.dark-scheme {
         background: rgb(202, 202, 202);
+		border: none;
     }
 
     .button.dark-scheme {
