@@ -45,17 +45,21 @@ function handleDownload() {
 
 // проверка склонения
 function checkDeclension(num) {
-    const lastDigit = num % 10;
-    let text;
-
     if (num && num.length > 11) {
         return 'есть дохуя рублей?';
     }
 
+    num = Math.abs(num);
+
+    let text;
+    const lastDigit = num % 10;
+    const twoLastDigits = num % 100;
+
     if (
         (lastDigit === 0 && num) ||
         (lastDigit > 4 && lastDigit < 10) ||
-        (num > 9 && num < 20)
+        (num > 9 && num < 20) ||
+        (twoLastDigits > 10 && twoLastDigits < 15)
     ) {
         text = `есть ${num} рублей?`;
     } else if (lastDigit === 1) {
