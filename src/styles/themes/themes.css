@@ -1,0 +1,38 @@
+/* Стили для тех, кто предпочитает темную тему */
+@media (prefers-color-scheme: dark) {
+    /* тема по умолчанию темная */
+    body.dark-scheme {
+        color: #eee;
+        background: rgb(14, 14, 14);
+    }
+
+    .header.dark-scheme {
+        background: #1f1f1f;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 1);
+    }
+
+    .header__title.dark-scheme {
+        color: rgb(226, 226, 226);
+    }
+
+    .canvasdark-scheme {
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+    }
+
+    .input.dark-scheme {
+        background: rgb(202, 202, 202);
+    }
+
+    .button.dark-scheme {
+        background: #1f1f1f;
+        color: #fff;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);
+    }
+
+    .main__download-button__icon.dark-scheme {
+        background-image: url('../../images/file_download_white_36dp.svg');
+    }
+    .main__share-button__icon.dark-scheme {
+        background-image: url('../../images/share_white_36dp.svg');
+    }
+}

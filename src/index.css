@@ -1,3 +1,5 @@
+@import url('./styles/themes/themes.css');
+
 @import url('./styles/body/body.css');
 
 @import url('./styles/header/header.css');
