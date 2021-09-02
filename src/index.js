@@ -23,13 +23,13 @@ function draw(num) {
         context.drawImage(imageObj, 0, 0);
         // стили текста
         context.fillStyle = 'white';
-        context.font = '600 55px Microsoft Sans Serif';
+        context.font = '600 55px Microsoft Sans Serif, Arial, Helvetica';
         context.shadowColor = 'black';
         context.shadowOffsetX = 3;
         context.shadowOffsetY = 3;
         context.shadowBlur = 4;
         // вставка текста
-        context.fillText(text, 144, 480);
+        context.fillText(text, 13, 480);
     };
 }
 
@@ -48,7 +48,7 @@ function checkDeclension(num) {
     let text;
 
     if (num && num.length > 11) {
-        return 'дохуя рублей?';
+        return 'есть дохуя рублей?';
     }
 
     if (
@@ -56,13 +56,13 @@ function checkDeclension(num) {
         (lastDigit > 4 && lastDigit < 10) ||
         (num > 9 && num < 20)
     ) {
-        text = num + ' ' + 'рублей?';
+        text = `есть ${num} рублей?`;
     } else if (lastDigit === 1) {
-        text = num + ' ' + 'рубль?';
+        text = `есть ${num} рубль?`;
     } else if (lastDigit > 1 && lastDigit < 5) {
-        text = num + ' ' + 'рубля?';
+        text = `есть ${num} рубля?`;
     } else {
-        text = 'рубли?';
+        text = 'есть рубли?';
     }
 
     return text;
