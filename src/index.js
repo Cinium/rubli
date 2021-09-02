@@ -23,7 +23,8 @@ function draw(num) {
         context.drawImage(imageObj, 0, 0);
         // стили текста
         context.fillStyle = 'white';
-        context.font = '600 55px Microsoft Sans Serif, Arial, Helvetica';
+        context.font =
+            '600 55px Microsoft Sans Serif, Arial, Helvetica';
         context.shadowColor = 'black';
         context.shadowOffsetX = 3;
         context.shadowOffsetY = 3;
